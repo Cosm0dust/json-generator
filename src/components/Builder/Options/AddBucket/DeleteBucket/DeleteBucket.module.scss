@@ -1,0 +1,24 @@
+@import '../../../../../CssVar/CssVar';
+
+.deleteBuckets{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1em;
+  border: 1px solid $lgreenc;
+  min-height: 3rem;
+
+
+
+  button{
+    border: none;
+    background: $lredc;
+    color: white;
+    padding: 0 1em;
+    height: 3rem;
+
+    &:hover{
+      background: red;
+    }
+  }
+}

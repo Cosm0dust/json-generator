@@ -1,0 +1,27 @@
+@import '../../../../../CssVar/CssVar';
+
+.changeLength{
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+
+
+
+  .buttonLength{
+    width: 5em;
+  }
+
+  input{
+    padding: 2%;
+    color: $lbluec;
+    font-size: 1.3rem;
+    border: 1px solid $lgreenc;
+    width: 6em;
+
+    &:focus{
+      border: 1px solid $lbluec;
+      color: $lgreenc;
+      outline: none;
+    }
+  }
+}

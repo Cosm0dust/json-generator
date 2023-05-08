@@ -1,0 +1,38 @@
+.addNumber {
+  display: flex;
+  align-items: center;
+  gap: 3em;
+  border: 1px solid #00dfc4;
+  padding: 1em;
+}
+.addNumber .numbersFlex {
+  display: flex;
+  justify-content: space-around;
+  gap: 3em;
+  align-items: center;
+}
+.addNumber .numbersFlex .numbers {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+.addNumber .numbersFlex .numbers span {
+  font-size: 1.7rem;
+}
+.addNumber .numbersFlex .numbers input {
+  padding: 2%;
+  color: rgba(107, 193, 255, 0.82);
+  font-size: 1.3rem;
+  border: 1px solid #00dfc4;
+  width: 6em;
+}
+.addNumber .numbersFlex .numbers input:focus {
+  border: 1px solid rgba(107, 193, 255, 0.82);
+  color: #00dfc4;
+  outline: none;
+}
+.addNumber .numbersFlex .addNumberInput {
+  width: 12em;
+}
+
+/*# sourceMappingURL=AddRandomNumber.module.css.map */

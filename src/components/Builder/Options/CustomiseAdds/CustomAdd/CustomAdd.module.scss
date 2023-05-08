@@ -1,0 +1,39 @@
+@import '../../../../../CssVar/CssVar';
+
+.addString{
+  border: 1px solid $lgreenc;
+  padding: 1em;
+
+  .randomisedProperties{
+
+    .randomisingInputs{
+      display: flex;
+      gap: 1em;
+      align-items: center;
+      .randomisingInput{
+        width: 20em;
+      }
+    }
+  }
+
+  .propertiesBucket{
+    margin-top: 1em;
+    min-height: 2em;
+    border: 1px solid $lgreenc;
+    display: flex;
+    align-items: center;
+    padding: 0.2em 0.5em;
+    gap: 0.5em;
+
+    span{
+      font-size: 2rem;
+      border: 1px solid $lbluec;
+      padding: 0.1em;
+    }
+  }
+
+  .propertiesButton{
+    margin-top: 1em;
+  }
+
+}

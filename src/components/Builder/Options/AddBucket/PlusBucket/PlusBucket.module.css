@@ -1,0 +1,21 @@
+.addBucket {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1em;
+  border: 1px solid #00dfc4;
+  max-width: 100%;
+  height: 4em;
+  padding: 1em;
+}
+.addBucket button {
+  border: none;
+  background: #00dfc4;
+  color: white;
+  padding: 0 1em;
+}
+.addBucket button:hover {
+  background: rgba(71, 238, 255, 0.82);
+}
+
+/*# sourceMappingURL=PlusBucket.module.css.map */

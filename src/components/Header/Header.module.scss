@@ -1,0 +1,13 @@
+@import '../../CssVar/CssVar';
+
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: $contentWidth;
+  font-size: 3rem;
+  height: 3em;
+
+  color: $lgreyc;
+  background-color: $lgreenc;
+}

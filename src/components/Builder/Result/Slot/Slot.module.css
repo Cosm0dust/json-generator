@@ -1,0 +1,40 @@
+.slot {
+  display: flex;
+  width: 95%;
+  justify-content: space-between;
+  border: 1px solid #00dfc4;
+  overflow: hidden;
+}
+.slot .text {
+  cursor: pointer;
+  flex: 1;
+}
+.slot .buttons {
+  display: flex;
+  align-items: flex-start;
+  height: 110%;
+}
+.slot .buttons .updateB {
+  height: 110%;
+  width: 1.5rem;
+}
+.slot .buttons .updateB button {
+  background-color: rgba(107, 193, 255, 0.82);
+  width: 100%;
+  height: 100%;
+  border: none;
+  cursor: pointer;
+}
+.slot .buttons .editB {
+  width: 1.5rem;
+  height: 100%;
+}
+.slot .buttons .editB button {
+  background-color: red;
+  width: 100%;
+  height: 100%;
+  border: none;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=Slot.module.css.map */

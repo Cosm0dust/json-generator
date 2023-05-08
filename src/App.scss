@@ -1,0 +1,403 @@
+@import 'CssVar/CssVar';
+
+.App{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+
+
+  .constructor{
+    display: flex;
+    width: 90%;
+    color: $lbluec;
+
+    .options{
+      flex: 2;
+      display: flex;
+      gap: 1em;
+      flex-direction: column;
+      font-size: 1rem;
+      border: 1px solid red;
+
+      .changeLength{
+        display: flex;
+        align-items: center;
+        gap: 0.5em;
+
+        .buttonLength{
+          width: 5em;
+        }
+
+        input{
+          padding: 2%;
+          color: $lbluec;
+          font-size: 1.3rem;
+          border: 1px solid $lgreenc;
+          width: 6em;
+
+          &:focus{
+            border: 1px solid $lbluec;
+            color: $lgreenc;
+            outline: none;
+          }
+        }
+      }
+
+      .buttonsBucket{
+        .addBucket{
+          display: flex;
+          justify-content: center;
+          flex-wrap: wrap;
+          gap: 1em;
+          border: 1px solid $lgreenc;
+          width: 100%;
+          height: 4em;
+          padding: 1em;
+
+          button{
+            border: none;
+            background: $lgreenc;
+            color: white;
+            padding: 0 1em;
+            &:hover{
+              background: rgba(71,238,255,0.82);
+            }
+          }
+        }
+
+        .deleteBuckets{
+          display: flex;
+          justify-content: center;
+          flex-wrap: wrap;
+          gap: 1em;
+          border: 1px solid $lgreenc;
+          width: 100%;
+          padding: 1em;
+
+          button{
+            border: none;
+            background: rgba(255,30,54,0.82);
+            color: white;
+            padding: 0 1em;
+            height: 3em;
+
+            &:hover{
+              background: red;
+            }
+          }
+        }
+      }
+
+
+      .customAdd{
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+
+
+        .addDate{
+          border: 1px solid $lgreenc;
+          padding: 1em;
+          display: flex;
+          gap: 2em;
+
+
+
+          .dates{
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              gap: 1em;
+            div{
+              display: flex;
+              gap: 0.5em;
+            }
+          }
+
+        }
+
+        .addNumber{
+
+          display: flex;
+          align-items: center;
+          gap: 3em;
+          border: 1px solid $lgreenc;
+          padding: 1em;
+
+          .numbersFlex{
+
+            display: flex;
+            justify-content: space-around;
+            gap: 2em;
+            align-items: center;
+            .numbers{
+              display: flex;
+              gap: 0.5em;
+
+              input{
+                padding: 2%;
+                color: $lbluec;
+                font-size: 1.3rem;
+                border: 1px solid $lgreenc;
+                width: 6em;
+
+                &:focus{
+                  border: 1px solid $lbluec;
+                  color: $lgreenc;
+                  outline: none;
+                }
+              }
+
+            }
+            .addNumberInput{
+              width: 12em;
+            }
+          }
+
+
+          .addNumberButton{
+
+          }
+      }
+        .addBoolean{
+          border: 1px solid $lgreenc;
+          display: flex;
+          gap: 3em;
+          padding: 1em;
+
+          .booleanInput{
+              width: 12em;
+
+          }
+        }
+
+        .addString{
+          border: 1px solid $lgreenc;
+          padding: 1em;
+
+            .randomisedProperties{
+
+              .randomisingInputs{
+                display: flex;
+                gap: 1em;
+                align-items: center;
+                .randomisingInput{
+                  width: 20em;
+                }
+              }
+            }
+
+          .propertiesBucket{
+            margin-top: 1em;
+            min-height: 2em;
+            border: 1px solid $lgreenc;
+            display: flex;
+            align-items: center;
+            padding: 0.2em 0.5em;
+            gap: 0.5em;
+
+            span{
+              font-size: 2rem;
+              border: 1px solid $lbluec;
+              padding: 0.1em;
+            }
+          }
+
+          .propertiesButton{
+            margin-top: 1em;
+          }
+
+        }
+
+
+    }
+
+
+  }
+    .result{
+      flex:1;
+
+      &__buttons{
+        display: flex;
+        gap: 0.3em;
+        flex-wrap: wrap;
+      }
+    }
+}
+
+
+
+  .inputContainer{
+    border-radius: 10px;
+    width: 100%;
+
+
+    .inputBox{
+      position: relative;
+      width: 100%;
+
+      input{
+        border: 1px solid $lgreenc;
+        border-radius: 5px;
+        outline: none;
+        color: #fff;
+        transition: 0.5s;
+        height: 2.5em;
+        width: 100%;
+      }
+
+      span{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 10px;
+
+        pointer-events: none;
+        color: $lbluec;
+        text-transform: uppercase;
+        transition: 0.5s;
+      }
+
+      input:focus ~ span, {
+        color: #00dfc4;
+        transform: translateX(3%) translateY(-150%);
+        font-size: 65%;
+        padding: 0 3%;
+        background-color: white;
+        border-left: 1px solid #00dfc4;
+        border-right: 1px solid #00dfc4;
+        letter-spacing: 0.2em;
+      }
+
+      input:focus, {
+        color: #00dfc4;
+      }
+    }
+  }
+
+
+
+
+.textInput{
+  border: 1px solid  #0077cc;
+  height: 100%;
+  width: 100%;
+  border-radius: 30px;
+  padding:0 1rem;
+  outline: none;
+  font-size: 1em;
+}
+
+.neonBorderButton{
+  font-family: Consolas, sans-serif;
+  position: relative;
+  display: inline-block;
+
+  color: #2196f3;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  text-decoration: none;
+  overflow: hidden;
+  transition: 0.2s;
+  background: transparent;
+  border: none;
+  width: 100%;
+  padding: 0.5em;
+
+  span{
+    position: absolute;
+    display: block;
+
+    &:nth-child(1){
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 0.1em;
+      background: linear-gradient(90deg, transparent, #2196f3);
+    }
+    &:nth-child(2){
+      top: -100%;
+      right: 0;
+      width: 0.1em;
+      height: 100%;
+      background: linear-gradient(180deg, transparent, #2196f3);
+    }
+
+    &:nth-child(3){
+      bottom: 0;
+      right: -100%;
+      width: 100%;
+      height: 0.1em;
+      background: linear-gradient(270deg, transparent, #2196f3);
+    }
+
+    &:nth-child(4){
+      bottom: -100%;
+      left: 0;
+      width: 0.1em;
+      height: 100%;
+      background: linear-gradient(360deg, transparent, #2196f3);
+    }
+
+
+  }
+
+  &:hover{
+    color: white;
+    background: $lbluec;
+   transition-delay: 0.5s;
+
+    span{
+
+      &:nth-child(1){
+        left: 100%;
+        transition: 0.25s;
+      }
+
+      &:nth-child(2){
+        top: 100%;
+        transition: 1s;
+        transition-delay: 0.5s;
+      }
+
+      &:nth-child(3){
+        right: 100%;
+        transition: 1s;
+        transition-delay: 0.25s;
+      }
+      &:nth-child(4){
+        bottom: 100%;
+        transition: 1s;
+        transition-delay: 0.5s;
+      }
+    }
+  }
+}
+
+.dateInput{
+  height: 2em;
+  input[type='date']{
+    background-color: #0080ff ;
+    padding: 0.5em;
+    font-family: 'Roboto Mono', sans-serif;
+    color: #FFFFFF;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+
+    &:hover{
+      background-color: $lbluec;
+    }
+  }
+
+  ::-webkit-calendar-picker-indicator{
+    background-color: #FFFFFF;
+    padding: 0.3em;
+    cursor: pointer;
+    border-radius: 5px;
+
+  }
+}}

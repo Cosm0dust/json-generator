@@ -1,0 +1,31 @@
+.addString {
+  border: 1px solid #00dfc4;
+  padding: 1em;
+}
+.addString .randomisedProperties .randomisingInputs {
+  display: flex;
+  gap: 1em;
+  align-items: center;
+}
+.addString .randomisedProperties .randomisingInputs .randomisingInput {
+  width: 20em;
+}
+.addString .propertiesBucket {
+  margin-top: 1em;
+  min-height: 2em;
+  border: 1px solid #00dfc4;
+  display: flex;
+  align-items: center;
+  padding: 0.2em 0.5em;
+  gap: 0.5em;
+}
+.addString .propertiesBucket span {
+  font-size: 2rem;
+  border: 1px solid rgba(107, 193, 255, 0.82);
+  padding: 0.1em;
+}
+.addString .propertiesButton {
+  margin-top: 1em;
+}
+
+/*# sourceMappingURL=CustomAdd.module.css.map */

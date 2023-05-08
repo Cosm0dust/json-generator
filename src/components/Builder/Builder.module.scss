@@ -1,0 +1,7 @@
+@import '../../CssVar/CssVar';
+
+.builder{
+  display: flex;
+  width: $contentWidth;
+  color: $lbluec;
+}

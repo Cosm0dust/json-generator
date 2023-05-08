@@ -1,0 +1,22 @@
+.changeLength {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+.changeLength .buttonLength {
+  width: 5em;
+}
+.changeLength input {
+  padding: 2%;
+  color: rgba(107, 193, 255, 0.82);
+  font-size: 1.3rem;
+  border: 1px solid #00dfc4;
+  width: 6em;
+}
+.changeLength input:focus {
+  border: 1px solid rgba(107, 193, 255, 0.82);
+  color: #00dfc4;
+  outline: none;
+}
+
+/*# sourceMappingURL=InputChange.module.css.map */

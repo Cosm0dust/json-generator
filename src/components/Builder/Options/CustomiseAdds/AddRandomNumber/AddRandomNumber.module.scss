@@ -1,0 +1,50 @@
+@import '../../../../../CssVar/CssVar';
+
+.addNumber{
+
+  display: flex;
+  align-items: center;
+  gap: 3em;
+  border: 1px solid $lgreenc;
+  padding: 1em;
+
+  .numbersFlex{
+
+    display: flex;
+    justify-content: space-around;
+    gap: 3em;
+    align-items: center;
+    .numbers{
+      display: flex;
+      align-items: center;
+      gap: 0.5em;
+
+      span{
+        font-size: 1.7rem;
+      }
+
+      input{
+        padding: 2%;
+        color: $lbluec;
+        font-size: 1.3rem;
+        border: 1px solid $lgreenc;
+        width: 6em;
+
+        &:focus{
+          border: 1px solid $lbluec;
+          color: $lgreenc;
+          outline: none;
+        }
+      }
+
+    }
+    .addNumberInput{
+      width: 12em;
+    }
+  }
+
+
+  .addNumberButton{
+
+  }
+}

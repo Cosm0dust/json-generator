@@ -1,0 +1,10 @@
+.changeLengthContainer {
+  padding-bottom: 3em;
+}
+.changeLengthContainer .changeContainer {
+  display: flex;
+  gap: 2em;
+  align-items: center;
+}
+
+/*# sourceMappingURL=ChangeLength.module.css.map */

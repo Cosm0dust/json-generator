@@ -1,0 +1,20 @@
+.deleteBuckets {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1em;
+  border: 1px solid #00dfc4;
+  min-height: 3rem;
+}
+.deleteBuckets button {
+  border: none;
+  background: rgba(255, 30, 54, 0.82);
+  color: white;
+  padding: 0 1em;
+  height: 3rem;
+}
+.deleteBuckets button:hover {
+  background: red;
+}
+
+/*# sourceMappingURL=DeleteBucket.module.css.map */

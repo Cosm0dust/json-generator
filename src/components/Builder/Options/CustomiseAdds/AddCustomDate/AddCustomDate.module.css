@@ -1,0 +1,21 @@
+.addDate {
+  border: 1px solid #00dfc4;
+  padding: 1em;
+  display: flex;
+  gap: 2em;
+  align-items: center;
+}
+.addDate .dates {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+.addDate .dates div {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  gap: 0.5em;
+}
+
+/*# sourceMappingURL=AddCustomDate.module.css.map */

@@ -1,38 +1,321 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  width: 100%;
+}
+.App .constructor {
+  display: flex;
+  width: 90%;
+  color: rgba(107, 193, 255, 0.82);
+}
+.App .constructor .options {
+  flex: 2;
+  display: flex;
+  gap: 1em;
+  flex-direction: column;
+  font-size: 1rem;
+  border: 1px solid red;
+}
+.App .constructor .options .changeLength {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+.App .constructor .options .changeLength .buttonLength {
+  width: 5em;
+}
+.App .constructor .options .changeLength input {
+  padding: 2%;
+  color: rgba(107, 193, 255, 0.82);
+  font-size: 1.3rem;
+  border: 1px solid #00dfc4;
+  width: 6em;
+}
+.App .constructor .options .changeLength input:focus {
+  border: 1px solid rgba(107, 193, 255, 0.82);
+  color: #00dfc4;
+  outline: none;
+}
+.App .constructor .options .buttonsBucket .addBucket {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1em;
+  border: 1px solid #00dfc4;
+  width: 100%;
+  height: 4em;
+  padding: 1em;
+}
+.App .constructor .options .buttonsBucket .addBucket button {
+  border: none;
+  background: #00dfc4;
   color: white;
+  padding: 0 1em;
+}
+.App .constructor .options .buttonsBucket .addBucket button:hover {
+  background: rgba(71, 238, 255, 0.82);
+}
+.App .constructor .options .buttonsBucket .deleteBuckets {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1em;
+  border: 1px solid #00dfc4;
+  width: 100%;
+  padding: 1em;
+}
+.App .constructor .options .buttonsBucket .deleteBuckets button {
+  border: none;
+  background: rgba(255, 30, 54, 0.82);
+  color: white;
+  padding: 0 1em;
+  height: 3em;
+}
+.App .constructor .options .buttonsBucket .deleteBuckets button:hover {
+  background: red;
+}
+.App .constructor .options .customAdd {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.App .constructor .options .customAdd .addDate {
+  border: 1px solid #00dfc4;
+  padding: 1em;
+  display: flex;
+  gap: 2em;
+}
+.App .constructor .options .customAdd .addDate .dates {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+.App .constructor .options .customAdd .addDate .dates div {
+  display: flex;
+  gap: 0.5em;
+}
+.App .constructor .options .customAdd .addNumber {
+  display: flex;
+  align-items: center;
+  gap: 3em;
+  border: 1px solid #00dfc4;
+  padding: 1em;
+}
+.App .constructor .options .customAdd .addNumber .numbersFlex {
+  display: flex;
+  justify-content: space-around;
+  gap: 2em;
+  align-items: center;
+}
+.App .constructor .options .customAdd .addNumber .numbersFlex .numbers {
+  display: flex;
+  gap: 0.5em;
+}
+.App .constructor .options .customAdd .addNumber .numbersFlex .numbers input {
+  padding: 2%;
+  color: rgba(107, 193, 255, 0.82);
+  font-size: 1.3rem;
+  border: 1px solid #00dfc4;
+  width: 6em;
+}
+.App .constructor .options .customAdd .addNumber .numbersFlex .numbers input:focus {
+  border: 1px solid rgba(107, 193, 255, 0.82);
+  color: #00dfc4;
+  outline: none;
+}
+.App .constructor .options .customAdd .addNumber .numbersFlex .addNumberInput {
+  width: 12em;
+}
+.App .constructor .options .customAdd .addBoolean {
+  border: 1px solid #00dfc4;
+  display: flex;
+  gap: 3em;
+  padding: 1em;
+}
+.App .constructor .options .customAdd .addBoolean .booleanInput {
+  width: 12em;
+}
+.App .constructor .options .customAdd .addString {
+  border: 1px solid #00dfc4;
+  padding: 1em;
+}
+.App .constructor .options .customAdd .addString .randomisedProperties .randomisingInputs {
+  display: flex;
+  gap: 1em;
+  align-items: center;
+}
+.App .constructor .options .customAdd .addString .randomisedProperties .randomisingInputs .randomisingInput {
+  width: 20em;
+}
+.App .constructor .options .customAdd .addString .propertiesBucket {
+  margin-top: 1em;
+  min-height: 2em;
+  border: 1px solid #00dfc4;
+  display: flex;
+  align-items: center;
+  padding: 0.2em 0.5em;
+  gap: 0.5em;
+}
+.App .constructor .options .customAdd .addString .propertiesBucket span {
+  font-size: 2rem;
+  border: 1px solid rgba(107, 193, 255, 0.82);
+  padding: 0.1em;
+}
+.App .constructor .options .customAdd .addString .propertiesButton {
+  margin-top: 1em;
+}
+.App .constructor .result {
+  flex: 1;
+}
+.App .constructor .result__buttons {
+  display: flex;
+  gap: 0.3em;
+  flex-wrap: wrap;
+}
+.App .inputContainer {
+  border-radius: 10px;
+  width: 100%;
+}
+.App .inputContainer .inputBox {
+  position: relative;
+  width: 100%;
+}
+.App .inputContainer .inputBox input {
+  border: 1px solid #00dfc4;
+  border-radius: 5px;
+  outline: none;
+  color: #fff;
+  transition: 0.5s;
+  height: 2.5em;
+  width: 100%;
+}
+.App .inputContainer .inputBox span {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 10px;
+  pointer-events: none;
+  color: rgba(107, 193, 255, 0.82);
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+.App .inputContainer .inputBox input:focus ~ span {
+  color: #00dfc4;
+  transform: translateX(3%) translateY(-150%);
+  font-size: 65%;
+  padding: 0 3%;
+  background-color: white;
+  border-left: 1px solid #00dfc4;
+  border-right: 1px solid #00dfc4;
+  letter-spacing: 0.2em;
+}
+.App .inputContainer .inputBox input:focus {
+  color: #00dfc4;
+}
+.App .textInput {
+  border: 1px solid #0077cc;
+  height: 100%;
+  width: 100%;
+  border-radius: 30px;
+  padding: 0 1rem;
+  outline: none;
+  font-size: 1em;
+}
+.App .neonBorderButton {
+  font-family: Consolas, sans-serif;
+  position: relative;
+  display: inline-block;
+  color: #2196f3;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  text-decoration: none;
+  overflow: hidden;
+  transition: 0.2s;
+  background: transparent;
+  border: none;
+  width: 100%;
+  padding: 0.5em;
+}
+.App .neonBorderButton span {
+  position: absolute;
+  display: block;
+}
+.App .neonBorderButton span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 0.1em;
+  background: linear-gradient(90deg, transparent, #2196f3);
+}
+.App .neonBorderButton span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 0.1em;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #2196f3);
+}
+.App .neonBorderButton span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 0.1em;
+  background: linear-gradient(270deg, transparent, #2196f3);
+}
+.App .neonBorderButton span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 0.1em;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #2196f3);
+}
+.App .neonBorderButton:hover {
+  color: white;
+  background: rgba(107, 193, 255, 0.82);
+  transition-delay: 0.5s;
+}
+.App .neonBorderButton:hover span:nth-child(1) {
+  left: 100%;
+  transition: 0.25s;
+}
+.App .neonBorderButton:hover span:nth-child(2) {
+  top: 100%;
+  transition: 1s;
+  transition-delay: 0.5s;
+}
+.App .neonBorderButton:hover span:nth-child(3) {
+  right: 100%;
+  transition: 1s;
+  transition-delay: 0.25s;
+}
+.App .neonBorderButton:hover span:nth-child(4) {
+  bottom: 100%;
+  transition: 1s;
+  transition-delay: 0.5s;
+}
+.App .dateInput {
+  height: 2em;
+}
+.App .dateInput input[type=date] {
+  background-color: #0080ff;
+  padding: 0.5em;
+  font-family: "Roboto Mono", sans-serif;
+  color: #FFFFFF;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+.App .dateInput input[type=date]:hover {
+  background-color: rgba(107, 193, 255, 0.82);
+}
+.App .dateInput ::-webkit-calendar-picker-indicator {
+  background-color: #FFFFFF;
+  padding: 0.3em;
+  cursor: pointer;
+  border-radius: 5px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+/*# sourceMappingURL=App.css.map */

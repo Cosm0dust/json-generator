@@ -1,0 +1,23 @@
+@import '../../../../../CssVar/CssVar';
+
+.addBucket{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1em;
+  border: 1px solid $lgreenc;
+
+  max-width: 100%;
+  height: 4em;
+  padding: 1em;
+
+  button{
+    border: none;
+    background: $lgreenc;
+    color: white;
+    padding: 0 1em;
+    &:hover{
+      background: rgba(71,238,255,0.82);
+    }
+  }
+}

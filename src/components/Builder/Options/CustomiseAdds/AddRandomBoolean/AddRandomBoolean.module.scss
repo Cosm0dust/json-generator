@@ -1,0 +1,13 @@
+@import '../../../../../CssVar/CssVar';
+
+.addBoolean{
+  border: 1px solid $lgreenc;
+  display: flex;
+  gap: 3em;
+  padding: 1em;
+
+  .booleanInput{
+    width: 12em;
+
+  }
+}

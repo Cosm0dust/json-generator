@@ -1,0 +1,11 @@
+.addBoolean {
+  border: 1px solid #00dfc4;
+  display: flex;
+  gap: 3em;
+  padding: 1em;
+}
+.addBoolean .booleanInput {
+  width: 12em;
+}
+
+/*# sourceMappingURL=AddRandomBoolean.module.css.map */

@@ -1,0 +1,25 @@
+@import '../../../../../CssVar/CssVar';
+
+.addDate{
+  border: 1px solid $lgreenc;
+  padding: 1em;
+  display: flex;
+  gap: 2em;
+  align-items: center;
+
+
+
+  .dates{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    div{
+      display: flex;
+      align-items: center;
+      font-size: 1.5rem;
+      gap: 0.5em;
+    }
+  }
+
+}
